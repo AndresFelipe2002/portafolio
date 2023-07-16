@@ -1,0 +1,16 @@
+.btn-up {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.btn-up a {
+  padding: 1.3rem 1.1rem;
+  border-radius: 50%;
+  background-color: var(--third-bg-color);
+}
+
+.btn-up a:hover {
+  background-color: aqua;
+  box-shadow: 0 0 1rem aqua;
+}

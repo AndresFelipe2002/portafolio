@@ -1,0 +1,65 @@
+.card {
+  box-shadow: 0 0 1rem var(--bg-color-main);
+  border-radius: 2rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  overflow: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card-title {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+.accordion .accordion-header {
+  padding: 0;
+}
+
+.accordion .accordion-header button {
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+.card-img-top {
+  width: 100%;
+  min-height: 15rem;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card:hover {
+  min-height: 35rem;
+  box-shadow: 0 0 0.5rem rgb(255, 255, 255);
+}
+
+.card:hover .card-img-top {
+  display: none;
+}
+
+.card:hover .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slice linear 2s normal;
+}
+
+@keyframes slice {
+  100% {
+    transform: translateY(0%);
+  }
+}

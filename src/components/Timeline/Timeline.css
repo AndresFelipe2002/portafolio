@@ -1,0 +1,31 @@
+.timeline {
+    width: 100%;
+    max-height: 40rem;
+    overflow: auto;
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color-main);
+}
+
+.timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.porcentage {
+    display: flex;
+    gap: .3rem;
+}
+
+.porcentage__item {
+    padding: .2rem;
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.progress {
+    margin-top: 1rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
